@@ -1,21 +1,18 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
+ * main - a program that prints the alphabet in lowercase,
+ * followed by a new line.
+ * Return: 0 on Success
  */
-
 int main(void)
 {
-	char low;
-	for(low = 'a'; low <= 'z'; low++)
-		putchar(low);
-	        putchar('\n');
+	char c = 'a';
 
-
-		return (0);
-
+	while (c <= 'z')
+	{
+		putchar(c);
+		c++;
+	}
+	putchar('\n');
+	return (0);
 }
